@@ -1,0 +1,18 @@
+a=input('请输入你的体重（kg）')
+b=input('请输入你的身高（m）')
+bmi=float(a)/(float(b)**2)
+print('你的BIM指数为：%0.1f' % bmi)
+if bmi<18.5:
+    print('过轻')
+elif (bmi>=18.5)&(bmi<25):
+    print('正常')
+elif (bmi >=25)&(bmi<28):
+    print('过重')
+elif (bmi>=28)&(bmi<32):
+    print('肥胖')
+elif (bmi>=32):
+    print('严重肥胖')
+else:
+    pass
+if (bmi<18.5)or(bmi>25):
+    print('你的正常体重为：','%0.1fkg'%(18.5*(float(b)**2)),"~",'%0.1fkg'%(25*(float(b)**2)))
