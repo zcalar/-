@@ -1,0 +1,12 @@
+def num(L):
+    if L==[]:
+        return (None, None)
+    else:
+        mini=max=L[0]
+        for a in L:
+            if a>max:
+                max=a
+            if a<mini:
+                mini=a
+        return(mini,max)
+print(num([3,8]))
